@@ -9,6 +9,9 @@ $jenis_kelamin = $_POST['jenis_kelamin'];
 
 mysqli_query($koneksi, "update biodata SET nama='$nama', umur='$umur', jenis_kelamin='$jenis_kelamin' WHERE id='$id'");
 
-header('location:index.php');
-
 ?>
+
+<script>
+    alert("Data berhasil diubah!");
+    window.location.href = "index.php";
+</script>
